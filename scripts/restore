@@ -1,0 +1,14 @@
+#!/bin/bash
+set -eu
+
+source /usr/share/yunohost/helpers
+source "$(dirname "$0")/_common.sh"
+
+ynh_script_progression --message="Restoring write_nostr files..." --weight=1
+ynh_restore "$install_dir/build"
+chown -R www-data: "$install_dir"
+
+ynh_script_progression --message="Restoring write_nostr Nginx configuration..." --weight=1
+ynh_config_add_nginx
+
+ynh_script_progression --message="write_nostr restore complete" --last
