@@ -7,7 +7,7 @@ name = "write_nostr"
 description.en = "Distraction-free long-form Markdown writing and publishing app for Nostr (NIP-23)"
 description.fr = "Application d'écriture et de publication Markdown longue-forme pour Nostr (NIP-23), sans distraction"
 
-version = "0.4.0~ynh1"
+version = "0.4.1~ynh1"
 
 maintainers = ["imattau"]
 
@@ -39,8 +39,8 @@ ram.runtime = "1M"
 
 [resources]
     [resources.sources.main]
-    url = "https://github.com/imattau/write_nostr/archive/refs/tags/v0.4.0.tar.gz"
-    sha256 = "c8f77b3c4cddeeb03d1abb91fcddc1e53096bb325f6acc64df3ad4e99f55f1c8"
+    url = "https://github.com/imattau/write_nostr/archive/refs/tags/v0.4.1.tar.gz"
+    sha256 = "45b484da31490bd3f1bf01dbb7ccc8a81f7bdf009b83f2938288235caf09150c"
     autoupdate.strategy = "latest_github_commit"
 
     [resources.system_user]
